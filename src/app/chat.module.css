@@ -1,0 +1,74 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.chat-area {
+  flex-grow: 1; /* Grow to fill remaining space */
+  border-top: 1px solid #d1d5db; /* Gray border top */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  padding: 1rem; /* Add padding for better visual spacing */
+}
+
+.message-container {
+  margin-bottom: 1rem; /* Add space between messages */
+}
+
+.user-message {
+  text-align: right;
+}
+
+.bot-message {
+  text-align: left;
+}
+
+.message-bubble {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  max-width: 70%; /* Limit message bubble width */
+}
+
+.user-bubble {
+  background-color: #2563eb; /* Blue background for user messages */
+  color: #ffffff; /* White text color */
+  margin-left: auto; /* Push user messages to the right */
+}
+
+.bot-bubble {
+  background-color: #e5e7eb; /* Light gray background for bot messages */
+  margin-right: auto; /* Push bot messages to the left */
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #d1d5db; /* Gray border top */
+  padding: 1rem; /* Add padding for spacing */
+}
+
+.input-field {
+  flex-grow: 1;
+  padding: 1rem;
+  border: none;
+  border-top: 1px solid #d1d5db; /* Gray border top */
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  margin-right: 1rem; /* Add space between input and button */
+}
+
+.send-button {
+  padding: 1rem;
+  background-color: #2563eb; /* Blue background for send button */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+.send-button:hover {
+  background-color: #3b82f6; /* Darker blue on hover */
+}
